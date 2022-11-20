@@ -1,8 +1,122 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700;800&family=Source+Code+Pro:ital,wght@0,400;1,500&display=swap');
+
 :root {
-    --background-color: ;
+    --background-color: #000000;
+    --text-color: #ffffff;
+    --accent-color: #a72923;
     --ff-primary: "Poppins", sans-serif;
     --ff-secondary: "Montserrat", sans-serif;
     --ff-accent: "Source Code Pro", monospace;
 }
 
+html, body {
+    height: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+    background-color: var(--background-color);
+    user-select: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: var(--background-color);
+}
+
+/* ---------------- */
+/* -----Navbar----- */
+/* ---------------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    margin: 1vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 99;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link {
+    font-family: var(--ff-primary);
+    font-size: 1rem;
+    color: var(--text-color);
+    transition: ease .5s;
+}
+
+.nav-link:hover {
+    opacity: .5;
+    color: var(--text-color);
+    transition: ease .5s;
+}
+
+
+/* ---------------- */
+/* --Home section-- */
+/* ---------------- */
+.home-section {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-color);
+    height: 100vh;
+    padding: 15vh 0 15vh 0;
+}
+
+.text {
+    color: var(--text-color);
+}
+
+.text-accent {
+    color: var(--accent-color);
+}
+
+.home-description {
+    color: var(--text-color);
+    opacity: .7;
+    font-size: 1.1rem;
+}
+
+.explore {
+    
+}
+
+.explore-button {
+    margin-left: 10rem;
+    display: inline-block;
+    color: var(--text-color);
+    font-size: 2rem;
+    border: 7px solid var(--text-color);
+    padding: 2.9em 2em;
+    border-radius: 50%;
+    font-weight: 700;
+    transition: ease .5s;
+}
+
+.explore-button:hover {
+    color: black;
+    background-color: var(--text-color);
+}
