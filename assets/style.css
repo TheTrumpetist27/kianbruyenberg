@@ -2,6 +2,7 @@
 
 :root {
     --background-color: #000000;
+    --dynamic-text-color: white;
     --text-color: #ffffff;
     --accent-color: #a72923;
     --ff-primary: "Poppins", sans-serif;
@@ -60,13 +61,13 @@ a {
 .nav-link {
     font-family: var(--ff-primary);
     font-size: 1rem;
-    color: var(--text-color);
+    color: var(--dynamic-text-color);
     transition: ease .5s;
 }
 
 .nav-link:hover {
     opacity: .5;
-    color: var(--text-color);
+    color: var(--dynamic-text-color);
     transition: ease .5s;
 }
 
@@ -144,7 +145,7 @@ a {
   top: 0;
   left: 50%;
   transform: translate(-50%, -75%);
-  background: #000;
+  background: black;
 }
 
 .explore-button .liquid::before {
@@ -182,4 +183,9 @@ a {
 .about-section {
     height: 100vh;
     background: white;
+}
+
+.experience-section {
+    height: 100vh;
+    background: black;
 }

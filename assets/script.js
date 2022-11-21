@@ -5,4 +5,18 @@ const typed = new Typed(".typing",{
     backSpeed:60,
     loop:true,
     smartBackspace:true
-})
+});
+
+// change navbar color
+window.addEventListener('scroll', () => {
+    let scroll = this.scrollY;
+    // console.log(scroll);
+    // The about section: 888, 1824
+    if (scroll >= 888 && scroll <= 1824) {
+        const nav = document.querySelector(":root");
+        nav.style.setProperty("--dynamic-text-color", "black");
+    } else {
+        const nav = document.querySelector(":root");
+        nav.style.setProperty("--dynamic-text-color", "white");
+    }
+});
