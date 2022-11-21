@@ -1,7 +1,5 @@
 <body>
-    <header>
-        <?php include_once("includes/nav.html"); ?>
-    </header>
+    <?php include_once("includes/nav.html"); ?>
 
     <section class="home-section" id="home">
         <div class="container">
@@ -9,12 +7,12 @@
                 <div class="col info">
                     <div class="introduction">
                         <h1 class="text">Hi. I'm Kian.</h1>
-                        <h1 class="text">A <span class="typing text-accent">Student</span></h1><br />
+                        <h1 class="text">A <span class="typing text-accent accent-font">Student</span></h1><br />
                         <p class="home-description">I love building software for any website or application. <strong>Come on in.</strong></p>
                     </div>
                 </div>
                 <div class="col explore">
-                    <a href="#about" class="explore-button">Explore</a>
+                    <a href="#about" class="explore-button"><span>Explore</span><div class="liquid"></div></a>
                 </div>
             </div>
         </div>
