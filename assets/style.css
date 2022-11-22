@@ -26,6 +26,10 @@ html, body {
     box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
 a {
     text-decoration: none;
 }
@@ -174,15 +178,54 @@ a {
   }
 } */
 
+.come-in-button {
+    background-color: transparent;
+    color: var(--text-color);
+}
+
+/* ---------------- */
+/* -----Circle----- */
+/* ---------------- */
+
+.circle {
+    position: absolute;
+    z-index: 10;
+    top: 53vh;
+    left: 53vw;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    animation: circleBob 5s ease-in-out infinite;
+    transition-duration: .2s;
+}
+
+@keyframes circleBob {
+    0% {
+        top: 53vh;
+    }
+    50% {
+        top: 45vh;
+    }
+    100% {
+        top: 53vh;
+    }
+}
+
+
+
+
 /* ----------------- */
 /* --About section-- */
 /* ----------------- */
 .about-section {
     height: 100vh;
     background: white;
+    z-index: 98;
 }
 
 .experience-section {
     height: 100vh;
     background: black;
+    z-index: 97;
 }

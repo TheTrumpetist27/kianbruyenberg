@@ -27,3 +27,40 @@ window.addEventListener('scroll', () => {
         nav.style.setProperty("--dynamic-text-color", "white");
     }
 });
+
+// "Come on in" animation
+// delay function for waiting.
+const delay = milliseconds => new Promise(res => setTimeout(res, milliseconds));
+
+let clicked = false;
+const comeOnInButton = document.querySelector(".come-in-button");
+const circle = document.querySelector(".circle");
+
+comeOnInButton.addEventListener("click", async () => {
+    $(".circle").css({
+        "transition-duration": "2s",
+        "width": "200vw",
+        "height": "150vh",
+        "left": "-50vw",
+        "transform": "translateY(-30%)"
+    });
+
+    await delay(1000);
+    location.href = "#about";
+    await delay(300);
+    $(".circle").css({
+        "transition-duration": "2s",
+        "width": "50px",
+        "height": "50px",
+        "left": "53vw",
+        "transform": "translateY(0)"
+    });
+    await delay(100);
+    $(".circle").css({"transition-duration": ".2s"});
+});
+
+$(".come-in-button").hover(function(){
+    $(".circle").css({"scale": "2"})
+},function(){
+    $(".circle").css({"scale": "1"})
+});

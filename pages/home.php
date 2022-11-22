@@ -8,11 +8,12 @@
                     <div class="introduction">
                         <h1 class="text">Hi. I'm Kian.</h1>
                         <h1 class="text">A <span class="typing text-accent accent-font">Student</span></h1><br />
-                        <p class="home-description">I love building software for any website or application. <strong>Come on in.</strong></p>
+                        <p class="home-description">I love building software for any website or application. <button class="come-in-button"><strong>Come on in.</strong></button></p>
                     </div>
                 </div>
-                <div class="col explore">
+                <div class=" explore">
                     <!-- <a href="#about" class="explore-button"><span>Explore</span><div class="liquid"></div></a> -->
+                    <div class="circle"></div>
                 </div>
             </div>
         </div>
