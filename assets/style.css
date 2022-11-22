@@ -102,10 +102,7 @@ a {
 }
 
 /* Explore button and liquid. */
-/* .explore {
-    
-} */
-
+/* 
 .explore-button {
     position: relative;
     margin-left: 10rem;
@@ -175,7 +172,7 @@ a {
   100% {
     transform: translate(-50%, -75%) rotate(360deg);
   }
-}
+} */
 
 /* ----------------- */
 /* --About section-- */

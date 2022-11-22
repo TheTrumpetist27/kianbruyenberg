@@ -12,7 +12,7 @@
                     </div>
                 </div>
                 <div class="col explore">
-                    <a href="#about" class="explore-button"><span>Explore</span><div class="liquid"></div></a>
+                    <!-- <a href="#about" class="explore-button"><span>Explore</span><div class="liquid"></div></a> -->
                 </div>
             </div>
         </div>
