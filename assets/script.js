@@ -9,22 +9,17 @@ const typed = new Typed(".typing",{
 
 // change navbar color
 window.addEventListener('scroll', () => {
-    let scroll = this.scrollY;
-    console.log(scroll);
+    //let scroll = this.scrollY;
     // The about section: 888, 1824
     // 655, 1379
+    let scrollTop = window.scrollY;
+    let docHeight = document.body.offsetHeight;
+    // let winHeight = window.innerHeight;
+    let scrollPercent = scrollTop / docHeight;
+    let scrollPercentRounded = Math.round(scrollPercent * 100);
+    console.log("rounded" + scrollPercentRounded);
 
-    if (window.matchMedia("(min-width: 1366px)").matches) {
-        if (scroll >= 655 && scroll <= 1379) {
-            const nav = document.querySelector(":root");
-            nav.style.setProperty("--dynamic-text-color", "black");
-        } else {
-            const nav = document.querySelector(":root");
-            nav.style.setProperty("--dynamic-text-color", "white");
-        }
-    }
-
-    if (scroll >= 888 && scroll <= 1824) {
+    if (scrollPercentRounded >= 92 && scrollPercentRounded <= 192) {
         const nav = document.querySelector(":root");
         nav.style.setProperty("--dynamic-text-color", "black");
     } else {
