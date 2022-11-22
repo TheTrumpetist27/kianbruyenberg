@@ -178,15 +178,13 @@ a {
   }
 } */
 
+/* Come in button */
 .come-in-button {
     background-color: transparent;
     color: var(--text-color);
 }
 
-/* ---------------- */
-/* -----Circle----- */
-/* ---------------- */
-
+/* White circle */
 .circle {
     position: absolute;
     z-index: 10;
@@ -196,11 +194,11 @@ a {
     height: 50px;
     background-color: white;
     border-radius: 50%;
-    animation: circleBob 5s ease-in-out infinite;
+    animation: circleMoveUpAndDown 5s ease-in-out infinite;
     transition-duration: .2s;
 }
 
-@keyframes circleBob {
+@keyframes circleMoveUpAndDown {
     0% {
         top: 53vh;
     }
@@ -212,9 +210,6 @@ a {
     }
 }
 
-
-
-
 /* ----------------- */
 /* --About section-- */
 /* ----------------- */
@@ -224,6 +219,9 @@ a {
     z-index: 98;
 }
 
+/* ---------------------- */
+/* --Experience section-- */
+/* ---------------------- */
 .experience-section {
     height: 100vh;
     background: black;

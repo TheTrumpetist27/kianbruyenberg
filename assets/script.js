@@ -32,11 +32,13 @@ window.addEventListener('scroll', () => {
 // delay function for waiting.
 const delay = milliseconds => new Promise(res => setTimeout(res, milliseconds));
 
-let clicked = false;
+// Set variabels
 const comeOnInButton = document.querySelector(".come-in-button");
 const circle = document.querySelector(".circle");
 
+// Look for the button press
 comeOnInButton.addEventListener("click", async () => {
+    // enlarge the circle
     $(".circle").css({
         "transition-duration": "2s",
         "width": "200vw",
@@ -45,9 +47,11 @@ comeOnInButton.addEventListener("click", async () => {
         "transform": "translateY(-30%)"
     });
 
+    // wait 1000 ms and then go to the about section.
     await delay(1000);
     location.href = "#about";
     await delay(300);
+    // change everything back.
     $(".circle").css({
         "transition-duration": "2s",
         "width": "50px",
@@ -59,6 +63,7 @@ comeOnInButton.addEventListener("click", async () => {
     $(".circle").css({"transition-duration": ".2s"});
 });
 
+// For hovering over the button to enlarge the circle
 $(".come-in-button").hover(function(){
     $(".circle").css({"scale": "2"})
 },function(){
