@@ -12,7 +12,6 @@
                     </div>
                 </div>
                 <div class="explore">
-                    <!-- <a href="#about" class="explore-button"><span>Explore</span><div class="liquid"></div></a> -->
                     <div class="circle"></div>
                 </div>
             </div>
