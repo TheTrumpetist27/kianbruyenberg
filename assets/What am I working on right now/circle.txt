@@ -1,3 +1,0 @@
-A white circle that expands when "Come on in" is clicked.
-Then the website should scroll down to the about section just below it.
-the circle should then shrink out of the users sight.

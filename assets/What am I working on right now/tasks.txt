@@ -1,0 +1,16 @@
+// 22-11-2022 - 22-11-2022 ~ DONE
+
+A white circle that expands when "Come on in" is clicked.
+Then the website should scroll down to the about section just below it.
+the circle should then shrink out of the users sight.
+
+// 23-11-2022 - 23-11-2022 ~ DONE
+Adding social buttons on the left of the page.
+
+// 23-11-2022 - 23-11-2022 ~ DONE
+Adding content for the about section.
+
+// 23-11-2022 - Present ~ ONGOING
+adding img to about section.
+A white cover covers the about section when "Come on in" is clicked.
+then with the same animation it reveals the content on the page.

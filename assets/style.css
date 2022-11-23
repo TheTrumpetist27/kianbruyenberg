@@ -99,6 +99,10 @@ a {
     font-family: var(--ff-accent);
 }
 
+.secondary-font {
+    font-family: var(--ff-secondary);
+}
+
 .home-description {
     color: var(--text-color);
     opacity: .7;
@@ -184,12 +188,32 @@ a {
     color: var(--text-color);
 }
 
+.moving-arrow {
+    position: absolute;
+    color: var(--text-color);
+    left: 42vw;
+    top: 55.4vh;
+    animation: arrowMoveLeftRight 2s ease-in-out infinite;
+}
+
+@keyframes arrowMoveLeftRight {
+    0% {
+        left: 42vw;
+    }
+    50% {
+        left: 42.2vw;
+    }
+    100% {
+        left: 42vw;
+    }
+}
+
 /* White circle */
 .circle {
     position: absolute;
     z-index: 10;
     top: 53vh;
-    left: 53vw;
+    left: 55vw;
     width: 50px;
     height: 50px;
     background-color: white;
@@ -210,13 +234,61 @@ a {
     }
 }
 
+/* Button Links */
+.button-links {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    list-style: none;
+    right: 2vw;
+    font-size: 40px;
+}
+
+.social-link {
+    margin-bottom: 3vh;
+    transition-duration: .2s;
+}
+
+.social-link:hover {
+    transform: translate(-5%, -5%);
+}
+
+.linkedin {
+    color: #2867b2;
+}
+
+.linkedin:hover {
+    color: #2867b2;
+}
+
+.github {
+    color: #cdd9e5;
+}
+
+.github:hover {
+    color: #cdd9e5;
+}
+
 /* ----------------- */
 /* --About section-- */
 /* ----------------- */
 .about-section {
+    display: flex;
+    align-items: center;
     height: 100vh;
     background: white;
     z-index: 98;
+}
+
+.introduction {
+    position: relative;
+    top: -20vh;
+}
+
+.about-h1 {
+    color: black;
 }
 
 /* ---------------------- */

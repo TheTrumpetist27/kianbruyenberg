@@ -19,7 +19,7 @@ window.addEventListener('scroll', () => {
     let scrollPercentRounded = Math.round(scrollPercent * 100);
     console.log("rounded" + scrollPercentRounded);
 
-    if (scrollPercentRounded >= 92 && scrollPercentRounded <= 192) {
+    if (scrollPercentRounded >= 95 && scrollPercentRounded <= 192) {
         const nav = document.querySelector(":root");
         nav.style.setProperty("--dynamic-text-color", "black");
     } else {
@@ -56,7 +56,7 @@ comeOnInButton.addEventListener("click", async () => {
         "transition-duration": "2s",
         "width": "50px",
         "height": "50px",
-        "left": "53vw",
+        "left": "55vw",
         "transform": "translateY(0)"
     });
     await delay(100);
