@@ -42,7 +42,7 @@ comeOnInButton.addEventListener("click", async () => {
     $(".circle").css({
         "transition-duration": "2s",
         "width": "200vw",
-        "height": "150vh",
+        "height": "200vh",
         "left": "-50vw",
         "transform": "translateY(-30%)"
     });
@@ -53,7 +53,7 @@ comeOnInButton.addEventListener("click", async () => {
     await delay(300);
     // change everything back.
     $(".circle").css({
-        "transition-duration": "2s",
+        "transition-duration": "1.5s",
         "width": "50px",
         "height": "50px",
         "left": "55vw",

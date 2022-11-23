@@ -11,6 +11,7 @@ Adding social buttons on the left of the page.
 Adding content for the about section.
 
 // 23-11-2022 - Present ~ ONGOING
+make arrow responsive with paragraph
 adding img to about section.
 A white cover covers the about section when "Come on in" is clicked.
 then with the same animation it reveals the content on the page.
