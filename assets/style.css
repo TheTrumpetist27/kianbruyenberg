@@ -118,18 +118,18 @@ a {
 .moving-arrow {
     position: relative;
     color: var(--text-color);
-    /* animation: arrowMoveLeftRight 2s ease-in-out infinite; */
+    animation: arrowMoveLeftRight 2s ease-in-out infinite;
 }
 
 @keyframes arrowMoveLeftRight {
     0% {
-        left: 42vw;
+        margin-left: 0rem;
     }
     50% {
-        left: 42.2vw;
+        margin-left: .2rem;
     }
     100% {
-        left: 42vw;
+        margin-left: 0rem;
     }
 }
 
