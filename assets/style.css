@@ -111,6 +111,13 @@ a {
 
 /* Come in button */
 .come-in-button {
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    transition-duration: .2s;
+}
+
+.come-in-button:hover {
     background-color: transparent;
     color: var(--text-color);
 }
