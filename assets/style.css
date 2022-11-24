@@ -116,11 +116,9 @@ a {
 }
 
 .moving-arrow {
-    position: absolute;
+    position: relative;
     color: var(--text-color);
-    left: 42vw;
-    top: 55.4vh;
-    animation: arrowMoveLeftRight 2s ease-in-out infinite;
+    /* animation: arrowMoveLeftRight 2s ease-in-out infinite; */
 }
 
 @keyframes arrowMoveLeftRight {

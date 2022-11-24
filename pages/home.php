@@ -8,7 +8,7 @@
                     <div class="home-page-intro">
                         <h1 class="text">Hi. I'm Kian.</h1>
                         <h1 class="text">A <span class="typing text-accent accent-font">Student</span></h1><br />
-                        <p class="home-description">I love building software for any website or application. <button class="come-in-button"><strong>Come on in.</strong></button></p><i class="bi bi-arrow-left-short moving-arrow"></i>
+                        <p class="home-description">I love building software for any website or application. <button class="come-in-button"><strong>Come on in.</strong></button><i class="bi bi-arrow-left-short moving-arrow"></i></p>
                     </div>
                 </div>
                 <div class="explore">
