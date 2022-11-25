@@ -64,7 +64,7 @@ comeOnInButton.addEventListener("click", async () => {
     $(".circle").css({
         "transition-duration": "2s",
         "width": "200vw",
-        "height": "200vh",
+        "height": "250vh",
         "left": "-50vw",
         "transform": "translateY(-30%)"
     });
@@ -72,7 +72,7 @@ comeOnInButton.addEventListener("click", async () => {
     // wait 1000 ms and then go to the about section.
     await delay(1000);
     location.href = "#about";
-    await delay(300);
+    await delay(500);
     // change everything back.
     $(".circle").css({
         "transition-duration": "1.5s",
