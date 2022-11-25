@@ -15,3 +15,6 @@ make arrow responsive with paragraph
 adding img to about section.
 A white cover covers the about section when "Come on in" is clicked.
 then with the same animation it reveals the content on the page.
+Smaller image.
+come on in button weghalen
+text op landing page veranderen.
