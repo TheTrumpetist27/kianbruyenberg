@@ -35,6 +35,67 @@ a {
 }
 
 /* ---------------- */
+/* -----Loader----- */
+/* ---------------- */
+
+.loader {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212;
+    z-index: 999999;
+}
+
+.loader-kian {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.loader-text {
+    font-size: 7rem;
+    color: var(--text-color);
+}
+
+.loader-circle {
+    position: inherit;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    animation: loaderCircle 2s ease-in forwards;
+}
+
+@keyframes loaderCircle {
+    0% {
+        transform: translateY(0%);
+    }
+    27% {
+        transform: translateY(120%);
+        animation-timing-function: ease-out;
+    }
+    40% {
+        transform: translateY(90%);
+        animation-timing-function: ease-in;
+    }
+    55% {
+        transform: translateY(120%);
+    }
+    100% {
+        transform: translateY(120%);
+    }
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+/* ---------------- */
 /* -----Navbar----- */
 /* ---------------- */
 .navbar {

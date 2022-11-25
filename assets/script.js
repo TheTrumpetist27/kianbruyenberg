@@ -1,11 +1,35 @@
-// Typing animation
-const typed = new Typed(".typing",{
-    strings:["", "Student", "Software Engineer", "Software Developer", "Web Developer"],
-    typeSpeed:100,
-    backSpeed:60,
-    loop:true,
-    smartBackspace:true
-});
+"use strict";
+// delay function for waiting.
+const delay = milliseconds => new Promise(res => setTimeout(res, milliseconds));
+
+const loader = document.getElementById("loader");
+const loaderContent = document.getElementById("loader-content");
+
+// Loader
+window.onload = async () => {
+    await delay(1000);
+    $(".loader").css({
+        "transition-duration": "2.2s",
+        "transform": "translateX(200%)",
+        "width": "50vw"
+    });
+
+    // Typing animation
+    const typed = new Typed(".typing",{
+        strings:["Student", "Software Engineer", "Software Developer", "Web Developer"],
+        typeSpeed:100,
+        backSpeed:60,
+        loop:true,
+        smartBackspace:true
+    });
+
+    await delay(2000);
+    loader.classList.toggle("is-hidden");
+    loaderContent.classList.toggle("is-hidden");
+}
+
+
+
 
 // change navbar color
 window.addEventListener('scroll', () => {
@@ -29,8 +53,6 @@ window.addEventListener('scroll', () => {
 });
 
 // "Come on in" animation
-// delay function for waiting.
-const delay = milliseconds => new Promise(res => setTimeout(res, milliseconds));
 
 // Set variabels
 const comeOnInButton = document.querySelector(".come-in-button");

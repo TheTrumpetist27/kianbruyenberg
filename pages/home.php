@@ -1,5 +1,8 @@
 <body>
-    <?php include_once("includes/nav.html"); ?>
+    <?php
+    include("includes/loader.html");
+    include("includes/nav.html"); 
+    ?>
 
     <section class="home-section" id="home">
         <div class="container">
@@ -7,7 +10,7 @@
                 <div class="col info">
                     <div class="home-page-intro">
                         <h1 class="text">Hi. I'm Kian.</h1>
-                        <h1 class="text">A <span class="typing text-accent accent-font">Student</span></h1><br />
+                        <h1 class="text">A <span class="typing text-accent accent-font"></span></h1><br />
                         <p class="home-description">I love building software for any website or application. <button class="come-in-button"><strong>Come on in.</strong></button><i class="bi bi-arrow-left-short moving-arrow"></i></p>
                     </div>
                 </div>
@@ -43,11 +46,8 @@
     <section class="skills-section" id="skills">
         
     </section>
-    <?php include_once("includes/footer.html"); ?>
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="assets/script.js"></script>
+    <?php 
+    include("includes/footer.html"); 
+    include("includes/scripts.html");
+    ?>
 </body>
