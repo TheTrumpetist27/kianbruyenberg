@@ -10,8 +10,7 @@
                 <div class="col info">
                     <div class="home-page-intro">
                         <h1 class="text">Hi. I'm Kian.</h1>
-                        <h1 class="text">A <span class="typing text-accent accent-font"></span></h1><br />
-                        <p class="home-description">I love building software for any website or application. <button class="come-in-button"><strong>Come on in.</strong></button><i class="bi bi-arrow-left-short moving-arrow"></i></p>
+                        <h3 class="text">A <span class="text-accent accent-font">Student</span> in <br /><span class="text-accent accent-font">Software Engineering.</span></h3>
                     </div>
                 </div>
                 <div class="explore">

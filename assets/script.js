@@ -15,13 +15,13 @@ window.onload = async () => {
     });
 
     // Typing animation
-    const typed = new Typed(".typing",{
-        strings:["Student", "Software Engineer", "Software Developer", "Web Developer"],
-        typeSpeed:100,
-        backSpeed:60,
-        loop:true,
-        smartBackspace:true
-    });
+    // const typed = new Typed(".typing",{
+    //     strings:["Student", "Software Engineer", "Software Developer", "Web Developer"],
+    //     typeSpeed:100,
+    //     backSpeed:60,
+    //     loop:true,
+    //     smartBackspace:true
+    // });
 
     await delay(2000);
     loader.classList.toggle("is-hidden");
@@ -55,18 +55,18 @@ window.addEventListener('scroll', () => {
 // "Come on in" animation
 
 // Set variabels
-const comeOnInButton = document.querySelector(".come-in-button");
 const circle = document.querySelector(".circle");
 
 // Look for the button press
-comeOnInButton.addEventListener("click", async () => {
+circle.addEventListener("click", async () => {
     // enlarge the circle
     $(".circle").css({
         "transition-duration": "2s",
         "width": "200vw",
         "height": "250vh",
         "left": "-50vw",
-        "transform": "translateY(-30%)"
+        "transform": "translateY(-30%)",
+        "cursor": "default"
     });
 
     // wait 1000 ms and then go to the about section.
@@ -81,12 +81,12 @@ comeOnInButton.addEventListener("click", async () => {
         "left": "55vw",
         "transform": "translateY(0)"
     });
-    await delay(100);
-    $(".circle").css({"transition-duration": ".2s"});
+    await delay(1000);
+    $(".circle").css({"transition-duration": ".2s", "cursor": "pointer"});
 });
 
 // For hovering over the button to enlarge the circle
-$(".come-in-button").hover(function(){
+$(".circle").hover(function(){
     $(".circle").css({"scale": "2"})
 },function(){
     $(".circle").css({"scale": "1"})

@@ -163,41 +163,8 @@ a {
     font-family: var(--ff-secondary);
 }
 
-.home-description {
-    color: var(--text-color);
-    opacity: .7;
-    font-size: 1.1rem;
-}
-
-/* Come in button */
-.come-in-button {
-    border-radius: 4px;
-    background-color: white;
-    color: black;
-    transition-duration: .2s;
-}
-
-.come-in-button:hover {
-    background-color: transparent;
-    color: var(--text-color);
-}
-
-.moving-arrow {
-    position: relative;
-    color: var(--text-color);
-    animation: arrowMoveLeftRight 2s ease-in-out infinite;
-}
-
-@keyframes arrowMoveLeftRight {
-    0% {
-        margin-left: 0rem;
-    }
-    50% {
-        margin-left: .2rem;
-    }
-    100% {
-        margin-left: 0rem;
-    }
+.home-page-intro {
+    transform: translateY(-5rem);
 }
 
 /* White circle */
@@ -212,6 +179,7 @@ a {
     border-radius: 50%;
     animation: circleMoveUpAndDown 5s ease-in-out infinite;
     transition-duration: .2s;
+    cursor: pointer;
 }
 
 @keyframes circleMoveUpAndDown {
