@@ -135,7 +135,6 @@ a {
     transition: ease .5s;
 }
 
-
 /* ---------------- */
 /* --Home section-- */
 /* ---------------- */
@@ -249,12 +248,12 @@ a {
 
 .intro-picture {
     position: relative;
-    left: 10vw;
 }
 
 .picture {
     position: absolute;
     top: -30vh;
+    left: 10vw;
 }
 
 .line-horizontal {
@@ -275,6 +274,7 @@ a {
 }
 
 .img {
+    width: 500px;
     transition-duration: .2s;
     filter: grayscale(30%);
 }
@@ -287,11 +287,120 @@ a {
     color: black;
 }
 
+.description-link {
+    color: white;
+    background-color: var(--accent-color);
+    transition: .2s;
+    border-radius: 3px;
+    text-decoration: underline;
+}
+
+.description-link:hover {
+    color: black;
+    background-color: transparent;
+}
+
 /* ---------------------- */
-/* --Experience section-- */
+/* ---Projects section--- */
 /* ---------------------- */
-.experience-section {
+.projects-section {
     height: 100vh;
     background: black;
     z-index: 97;
+}
+
+/* ---------------------- */
+/* ----Footer section---- */
+/* ---------------------- */
+.footer-section {
+    height: 50vh;
+    background: black;
+    z-index: 96;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.footer-h1 {
+    position: relative;
+    left: 3.3rem;
+    margin-bottom: 2rem;
+}
+
+.footer-links {
+    position: relative;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    right: 1rem;
+    font-size: 3rem;
+}
+
+.footer-social-link {
+    transition-duration: .2s;
+}
+
+.footer-social-link:hover {
+    transform: translateY(-3%);
+}
+
+.copyright {
+    color: var(--text-color);
+}
+/* For laptops */
+@media screen and (max-width: 1024px) {
+    .img {
+        width: 350px;
+    }
+}
+
+/* For tablets */
+@media screen and (max-width: 768px) {
+    .circle {
+        display: none;
+    }
+    .img {
+        width: 350px;
+    }
+}
+
+/* For mobile */
+@media screen and (max-width: 425px) {
+    .circle {
+        display: none;
+    }
+    .picture {
+        position: absolute;
+        top: -27vh;
+        left: 17vw;
+    }
+    .img {
+        width: 250px;
+        filter: grayscale(0);
+    }
+    .line-horizontal {
+        position: relative;
+        width: 270px;
+        height: 6px;
+        background: var(--accent-color);
+        right: 20px;
+    }
+
+    .line-vertical {
+        position: absolute;
+        width: 6px;
+        height: 75px;
+        background: var(--accent-color);
+        right: 15px;
+        bottom: 0;
+    }
 }

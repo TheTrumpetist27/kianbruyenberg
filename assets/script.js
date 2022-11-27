@@ -28,9 +28,6 @@ window.onload = async () => {
     loaderContent.classList.toggle("is-hidden");
 }
 
-
-
-
 // change navbar color
 window.addEventListener('scroll', () => {
     //let scroll = this.scrollY;
