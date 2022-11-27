@@ -42,12 +42,6 @@
             </div>
         </div>
     </section>
-    <!-- <section class="projects-section" id="projects">
-        
-    </section>
-    <section class="skills-section" id="skills">
-        
-    </section> -->
     <?php 
     include("includes/footer.html"); 
     include("includes/scripts.html");

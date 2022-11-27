@@ -8,9 +8,9 @@ session_start();
 include_once("includes/head.html");
 
 // TODO: inplaats van $_GET -> $_SESSION.
-if (isset($_SESSION["page"])) {
+if (isset($_GET["page"])) {
     // Als er een pagina in de adress balk staat dan gebruiken we die.
-    $page = $_SESSION["page"];
+    $page = $_GET["page"];
 } else {
     // In alle andere gevallen (Dus als er geen pagina in de addres balk staat) gaan we naar onderstaande pagina.
     $page = "home";
